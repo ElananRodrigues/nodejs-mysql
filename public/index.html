@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESTful api nodejs mySQL</title>
+	<style type="text/css">
+		body{
+			margin: 0;font-family: 'Roboto', 'Noto', sans-serif;
+			line-height: 1.5;
+			min-height: 100vh;
+			background-color: #eeeeee;
+		}
+		.toolbar span{
+			margin: 16px 0px 0px 20px; 
+			padding: 0px;
+		}
+		.toolbar{
+			position: relative;
+		    height: 64px;
+		    padding: 0 16px;
+		    pointer-events: none;
+		    font-size: 20px;
+
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+
+		    -ms-flex-direction: row;
+		    -webkit-flex-direction: row;
+		    flex-direction: row;
+
+		    color: #3a3a3a;
+		    background: #FFFFFF;
+		}
+		.body{
+			margin: 20px 0px 0px 0px;
+		    -ms-flex: 1 1 0.000000001px;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    -webkit-flex-basis: 0.000000001px;
+		    flex-basis: 0.000000001px;
+		}
+		.body ul{
+			margin: 0px 20px; padding: 0px;
+			list-style: none;
+			color: #fff;
+		}
+		.body ul li{
+			margin: 0px; padding: 10px;
+		    -ms-flex: 1 1 0.000000001px;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    -webkit-flex-basis: 0.000000001px;
+		    flex-basis: 0.000000001px;
+		    border-bottom: 1px solid #ccc;
+
+		    background: #f1f1f1;
+		}
+		.body ul li span{
+			margin: 10px;
+			padding: 8px;
+			border-radius: 2px;
+			float: right;
+			background: #3a3a3a;
+		}
+		.body ul li table{
+			color: #3a3a3a;
+		}
+		.body ul li th,
+		.body ul li td{
+			margin: 0px; padding: 4px 10px;
+		}
+	</style>
+</head>
+<body>
+	<section class="toolbar">
+		<span>RESTful api Nodejs mySQL</span>
+	</section>
+	<section class="body">
+		<ul>
+			<li>
+				<span>GET</span>
+				<table>
+				 <tr>
+				   <th>Beharvior</th>
+				   <th>Send</th>
+				   <th>Link</th>
+				 </tr>
+				 <tr>
+				   <td>Get all users setting pagination</td>
+				   <td>/users/rows/(:page)</td>
+				   <td><a href="/users/rows/1">All Users</a></td>
+				 </tr>
+				 <tr>
+				   <td>Get unique user passed id</td>
+				   <td>/users/row/(:id)</td>
+				   <td><a href="/users/row/1">Get User</a></td>
+				 </tr>
+				</table>
+				
+			</li>
+			
+			<li>
+				<span>POST</span>
+				<table>
+				 <tr>
+				   <th>Beharvior</th>
+				   <th>Send</th>
+				   <th>Link</th>
+				 </tr>
+				 <tr>
+				   <td>Create new user</td>
+				   <td>/users/create</td>
+				   <td><a href="/users/create">Create new User</a></td>
+				 </tr>
+				</table>
+			</li>
+			<li>
+				<span>PUT</span>
+				<table>
+				 <tr>
+				   <th>Beharvior</th>
+				   <th>Send</th>
+				   <th>Link</th>
+				 </tr>
+				 <tr>
+				   <td>Update user passed id</td>
+				   <td>/users/update/(:id)</td>
+				   <td><a href="/users/update/1">Update User</a></td>
+				 </tr>
+				</table>
+			</li>
+			<li>
+				<span>DELETE</span>
+				<table>
+				 <tr>
+				   <th>Comment</th>
+				   <th>Send</th>
+				   <th>Link</th>
+				 </tr>
+				 <tr>
+				 	<td>Delete user passed id</td>
+				   	<td>/users/delete/(:id)</td>
+				   <td><a href="/users/delete/1">Delete User</a></td>
+				 </tr>
+				</table>
+			</li>
+		</ul>
+	</section>
+
+</body>
+</html>

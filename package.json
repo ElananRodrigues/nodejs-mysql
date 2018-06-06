@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-mysql",
+  "version": "1.0.0",
+  "description": "RESTful API NodeJS with connection in mySQL, Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+   "type": "git",
+    "url": "https://github.com/elananrodrigues/nodejs-mysql.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "mySQL",
+    "NodeJS"
+  ],
+  "author": "Elanan Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.15.0"
+  }
+}
