@@ -1,9 +1,9 @@
 {
-	database: {
-		host:	  'localhost', 	// database host
-		user: 	  'root', 		// your database username
-		password: '', 		    // your database password
-		port: 	  3306, 		// default MySQL port
-		db: 	  'users' 	    // your database name
+	"database": {
+		"host": "localhost", 
+		"user": "root", 		
+		"password": "", 		    
+		"port": 3306, 		
+		"db": "users"
 	}
 }
