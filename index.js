@@ -8,7 +8,7 @@ var app = express()
  * Set store database credentials in a separate config.js file
  * Load the file/module and its values
  */ 
-var config = require('./config')
+var config = require('./config.json')
 var db = {
 	host:	  config.database.host,
 	user: 	  config.database.user,
